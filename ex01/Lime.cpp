@@ -1,21 +1,5 @@
-#include "Lemon.h"
+#include "Lime.h"
 
-Lemon::Lemon() : Fruit()
-{
-	_vitamins = 3;
-	_name = "lemon";
-}
+Lime::Lime() :Lemon("lime", 2){
 
-Lemon::~Lemon(){
-
-}
-
-int	Lemon::getVitamins() const
-{
-	return _vitamins;
-}
-
-std::string	Lemon::getName() const
-{
-	return _name;
 }

@@ -1,15 +1,15 @@
-#ifndef LEMON_H_
-#define LEMON_H_
+#ifndef LITTLEHAND_H_
+#define LITTLEHAND_H_
 
-#include "Fruit.h"
+#include "FruitBox.h"
 
-class Lemon : public Fruit
+class LittleHand
 {
 	public:
-		Lemon();
-		~Lemon();
-		int getVitamins() const;
-		std::string getName() const;
+		LittleHand();
+		~LittleHand();
+  
+  void sortFruitBox(FruitBox& unsorted, FruitBox& lemons,FruitBox& bananas, FruitBox& limes);
 };
 
 #endif

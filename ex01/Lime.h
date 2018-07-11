@@ -1,15 +1,12 @@
-#ifndef LEMON_H_
-#define LEMON_H_
+#ifndef LIME_H_
+#define LIME_H_
 
-#include "Fruit.h"
+#include "Lemon.h"
 
-class Lemon : public Fruit
+class Lime : public Lemon 
 {
 	public:
-		Lemon();
-		~Lemon();
-		int getVitamins() const;
-		std::string getName() const;
+		Lime();
 };
 
 #endif

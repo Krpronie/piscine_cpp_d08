@@ -1,21 +1,19 @@
-#include "Lemon.h"
+#include "LittleHand.h"
 
-Lemon::Lemon() : Fruit()
+void LittleHand::sortFruitBox(FruitBox& unsorted, FruitBox& lemons,FruitBox& bananas,  FruitBox& limes)
 {
-	_vitamins = 3;
-	_name = "lemon";
-}
-
-Lemon::~Lemon(){
-
-}
-
-int	Lemon::getVitamins() const
-{
-	return _vitamins;
-}
-
-std::string	Lemon::getName() const
-{
-	return _name;
+  FruitBox tmp(unsorted.nbFruits());  
+  Fruit* fruit;
+  
+  while ((fruit = tmp.pickFruit()) != NULL)
+    tmp.putFruit(fruit);
+  while ((fruit = tmp.pickFruit()) != NULL)
+    if (fruit->getVitamins() == 5)
+      bananas.putFruit(fruit);
+    else if (fruit->getVitamins() == 3)
+      lemons.putFruit(fruit);
+    else if (fruit->getVitamins() == 2)
+      limes.putFruit(fruit);
+    else
+      unsorted.putFruit(fruit);
 }

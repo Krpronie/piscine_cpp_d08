@@ -11,7 +11,7 @@ FruitBox::~FruitBox(){
 
 }
 
-int	FruitBox::nbFruits() const
+int FruitBox::nbFruits() const
 {
   return (_nb);
 }
@@ -27,7 +27,7 @@ bool FruitBox::putFruit(Fruit* fruit)
   FruitNode* elem;
 
   if (_nb >= _size)
-  	return (false);
+    return (false);
   elem = new FruitNode();
   elem->fruit = fruit;
   tmp = _list;
@@ -36,11 +36,11 @@ bool FruitBox::putFruit(Fruit* fruit)
   else
     {
       while (tmp->next != NULL)
-	{
-	  if (tmp->fruit == fruit)
-	    return (false);
-	  tmp = tmp->next;
-	}
+      {
+        if (tmp->fruit == fruit)
+          return (false);
+        tmp = tmp->next;
+      }
       tmp->next = elem;
     }
   _nb++;
@@ -51,7 +51,7 @@ Fruit* FruitBox::pickFruit()
 {
   FruitNode* tmp;
   Fruit* fruit;
-	
+  
   if (_nb == 0)
     return (NULL);
   fruit = _list->fruit;

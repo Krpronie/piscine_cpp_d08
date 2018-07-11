@@ -6,6 +6,7 @@
 
 class Fruit
 {
+ protected:
   std::string _name;
   int _vitamins;
   
