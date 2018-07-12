@@ -1,27 +1,15 @@
 #include "Fruit.h"
 
-Fruit::Fruit()
-{
-  _name = "fruit";
-  _vitamins = 0;
+Fruit::Fruit(std::string name, int vitamins) :_name(name), _vitamins(vitamins){
+	
 }
 
-Fruit::Fruit(std::string const name, int vita)
+std::string Fruit::getName() const
 {
-  _name = name;
-  _vitamins = vita;
+	return (this->_name);
 }
 
-Fruit::~Fruit(){
-
-}
-
-std::string const& Fruit::getName() const
+int Fruit::getVitamins() const
 {
-  return (_name);
-}
-
-int	Fruit::getVitamins() const
-{
-  return (_vitamins);
+	return (this->_vitamins);
 }

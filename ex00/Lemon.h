@@ -5,11 +5,8 @@
 
 class Lemon : public Fruit
 {
-	public:
-		Lemon();
-		~Lemon();
-		int getVitamins() const;
-		std::string getName() const;
+public:
+	Lemon();
 };
 
 #endif

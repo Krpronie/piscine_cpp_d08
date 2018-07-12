@@ -5,11 +5,8 @@
 
 class Banana : public Fruit 
 {
- public:
- 	Banana();
-	~Banana();
-	virtual int getVitamins() const;
-	virtual std::string const &getName() const;
+public:
+	Banana();
 };
 
 #endif
