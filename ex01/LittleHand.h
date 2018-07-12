@@ -3,13 +3,13 @@
 
 #include "FruitBox.h"
 
-class LittleHand
+class LittleHand 
 {
-	public:
-		LittleHand();
-		~LittleHand();
-  
-  void sortFruitBox(FruitBox& unsorted, FruitBox& lemons,FruitBox& bananas, FruitBox& limes);
+public:
+	static void sortFruitBox(FruitBox &unsorted,
+		FruitBox &lemons,
+		FruitBox &bananas,
+		FruitBox &limes);
 };
 
 #endif

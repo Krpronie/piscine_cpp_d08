@@ -2,12 +2,12 @@
 #define FRUITNODE_H_
 
 #include "Fruit.h"
+#define Fruitnode FruitNode
 
-class FruitNode
+typedef struct FruitNode 
 {
-	public:
-		Fruit* fruit;
-		FruitNode* next;
-};
+	const Fruit *fruit;
+	struct FruitNode *next;
+} FruitNode;
 
 #endif

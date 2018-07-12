@@ -5,8 +5,8 @@
 
 class Lime : public Lemon 
 {
-	public:
-		Lime();
+public:
+	Lime();
 };
 
 #endif
